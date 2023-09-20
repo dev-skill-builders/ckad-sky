@@ -5,6 +5,7 @@
 ## Udemy Course Track
   |S.No|Topic|Start Date| End Date|Status|
   |---|---|---|---|---|
-  | 1 | Introduction | 20-09-2023 |  | Started |
+  | 1.1 | Introduction | 19-09-2023 | 19-09-2023 | Done|
+  | 1.2 - 1.  | Introduction | 20-09-2023 |  | |
   
 

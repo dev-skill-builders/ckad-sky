@@ -2,11 +2,6 @@
 
 ### Kanban board [here](https://projects.zenkit.com/c/JKWEZ7WHYR/devskillbuilders?v=VTqsHRUvzK).
 
-## Udemy Course Track Kubernetes for the Absolute Beginners (TBD)
-  |S.No|Topic|Start Date| End Date|Status|
-  |---|---|---|---|---|
-  | 1.1 | Introduction |  |  | |
-
 ## Udemy Course Track CKAD
   |S.No|Topic|Start Date| End Date|Status|
   |---|---|---|---|---|

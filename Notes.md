@@ -1,5 +1,7 @@
 ## Notes
 
+### Query K8s doc instead going to google!!!!
+
 - Nodes == Minions
 ---
 - Basic `kubectl` commands-

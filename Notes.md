@@ -1,7 +1,7 @@
 ## Notes
 
 - Nodes == Minions
-
+---
 - Basic `kubectl` commands-
 ```sh
     - kubectl run hello-minikube
@@ -15,3 +15,4 @@
 - ContainerD - `ctr` cli tool, mostly to `debug` containerD, `nerdctl` provides stable user experience.
 - `Lazy pulling` is a technique of pulling container images aiming at the faster cold start. This allows container runtimes to startup containers without waiting for the entire image contents. Instead, the necessary chunks of contents (e.g. individual files) are fetched on-demand. This shortens the container startup latency from tens of seconds into a few seconds at the best.
 - `crictl` CLI tool is a single interface used to interact with the CRI-compatible container runtime, mostly for `debugging` purpose.
+---

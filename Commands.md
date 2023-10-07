@@ -10,9 +10,23 @@
 - kubectl create -f pod-def.yml 
 
 
+- kubectyl apply -f pod-def.yml 
+
+
 - kubectl get po
 
 
 - kubectl describe pod myapp-pod
 
+##### To modify the properties of the pod
+- kubectl edit pod redis
 
+
+##### Get detail info on pods like Node details etc.
+- kubectl get pods -o wide
+
+##### Create the YAML definition to a file
+- kubectl run redis --image=redis123 --dry-run=client -o yaml > redis-pod-def.yaml
+
+##### Extract the YAML definition to a file
+- kubectl get pod <pod-name> -o yaml > pod-definition.yaml

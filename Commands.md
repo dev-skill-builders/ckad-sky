@@ -4,4 +4,15 @@
     - and deploys an instance of the nginx Docker image.
     - the nginx image is downloaded from the Docker Hub repository.
 
+- kubectl delete deployment nginx
+
+
+- kubectl create -f pod-def.yml 
+
+
 - kubectl get po
+
+
+- kubectl describe pod myapp-pod
+
+

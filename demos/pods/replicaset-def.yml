@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+
+kind: ReplicaSet
+
+metadata:
+  name: myapp-replicaset
+  labels:
+      app: myapp
+      type: front-end
+
+spec:
+  template:
+    metadata:
+      name: myapp-pod
+      labels:
+          app: myapp
+          type: front-end
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx
+
+  replicas: 3
+  selector:
+    matchLabels:
+      type: front-end
+
+
+# Commands
+
+  # kubectl create -f replicaset-def.yml
+
+  # kubectl get replicaset
+
+  # kubectl get pods
+
+# To update the number of replicas, update def file rplicas: 6 and run
+  # kubectl replace -f replicaset-def.yml
+  # or
+  # kubectl scale --replicas=6 -f replicaset-def.yml
+  # or
+  # kubectl scale --replicas=6 replicaset myapp-replicaset
+
+
+  # kubectl delete replicaset myapp-replicaset

@@ -25,8 +25,20 @@
 ## YAML
 - Kubernetes uses YAML files as inputs for the creation of objects such as `pods, replicas, deployments, services, et cetera.`
 - A Kubernetes definition file always contains four top level fields: `The API version, kind, metadata, and spec.` These are the top level or `root level` properties. These are also `required` fields so you must have them in your configuration file.
-- apiVersion: This is the version of the Kubernetes API we are using to `create` the object.
-- kind: The kind refers to the type of object we are trying to create, which in this case happens to be a `pod`, so we will set it as pod. Some other possible values here could be `replica` set or `deployment` or `service`.
-- metadata: The metadata is data about the object like its name, labels, et cetera. This is in the form of a dictionary.
-- spec: `Specification` section which is written as spec. Depending on the object we are going to create, this is where we would provide additional information to Kubernetes pertaining to that object. It is a `dict`.
+- `apiVersion`: This is the version of the Kubernetes API we are using to `create` the object.
+- `kind`: The kind refers to the type of object we are trying to create, which in this case happens to be a `pod`, so we will set it as pod. Some other possible values here could be `replica` set or `deployment` or `service`.
+- `metadata`: The metadata is data about the object like its name, labels, et cetera. This is in the form of a `dictionary`.
+- `spec`: `Specification` section which is written as spec. Depending on the object we are going to create, this is where we would provide additional information to Kubernetes pertaining to that object. It is a `dict`.
+---
+## REPLICA SETS, Controller, Replication Controller
+- Even if you have a single pod the replication controller can help by automatically bringing up a new pod when the existing one fails.
+- Thus, the replication controller ensures that the specified number of pods are running at all times even if it's just one or hundred.
+- Another reason we need replication controller is to create multiple pods to share the load across them.
+- The replication controller spans across multiple nodes in the cluster. It helps us balance the load across multiple pods on different nodes as well as scale our application when the demand increases.
+- Note that there are two similar terms `replication controller` and `replica set`. Both have the same purpose, but they're not the same.
+- Replication controller is the older technology that is being replaced by replica set.
+- Replica set is the new recommended way to set up replication.
+- Replica set requires a `selector` definition. The selector section helps the replica set identify what pods fall under it.
+- Need for selector is because replica set can also manage pods that were not created as part of the replica set creation.
+- Selector is one of the `major differences` between replication controller and replica set. The selector is not a required field in case of a replication controller but it is still available.
 ---

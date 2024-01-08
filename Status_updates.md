@@ -12,3 +12,11 @@
   | 2.23 - 2.24 | Core Concepts | 25-10-2023 | 31-10-2023 | Completed
   | 2.25 - | Core Concepts | 31-10-2023 | | Started
 
+
+### ___ RESTART___
+
+  |S.No|Topic|Start Date| End Date|Status|
+  |---|---|---|---|---|
+  | 1.1 - 2.24 | Revision | 08-01-2024 |  | Started |
+
+

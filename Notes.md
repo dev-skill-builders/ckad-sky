@@ -18,7 +18,7 @@
 - `Lazy pulling` is a technique of pulling container images aiming at the faster cold start. This allows container runtimes to startup containers without waiting for the entire image contents. Instead, the necessary chunks of contents (e.g. individual files) are fetched on-demand. This shortens the container startup latency from tens of seconds into a few seconds at the best.
 - `crictl` CLI tool is a single interface used to interact with the CRI-compatible container runtime, mostly for `debugging` purpose.
 ---
-- Pods usually have a `one-to-one` relationshipwith containers running your application.
+- Pods usually have a `one-to-one` relationship with containers running your application.
 - To scale up, you create new Pods and to scale down, you delete existing Pod. You do not add additional containers to an existing Pod to scale your application.
 - Though a single Pod can have multiple containers, except for the fact that they're usually not multiple containers of the `same kind`.
 ---

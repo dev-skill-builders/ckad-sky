@@ -17,6 +17,7 @@
 
   |S.No|Topic|Start Date| End Date|Status|
   |---|---|---|---|---|
-  | 1.1 - 2.24 | Revision | 08-01-2024 |  | Started |
+  | 1.1 - 2.10 | Revision | 08-01-2024 | 08-01-2024  | Completed |
+  | 2.11 -  | Revision | 09-01-2024 |  |  |
 
 
